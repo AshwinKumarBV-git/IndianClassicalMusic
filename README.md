@@ -1,16 +1,82 @@
-# icm
+# ICM Analyzer - Indian Classical Music Analysis Tool
 
-A new Flutter project.
+A Flutter-based application for analyzing and synthesizing Indian Classical Music (ICM). This tool helps musicians, students, and enthusiasts understand and work with various aspects of Indian Classical Music.
+
+## Features
+
+- **Audio Analysis**
+  - Raga Recognition
+  - Tala Pattern Detection
+  - Real-time Pitch Tracking
+  - Musical Note (Swara) Identification
+
+- **Audio Recording**
+  - High-quality audio recording capability
+  - Support for importing existing audio files
+  - Multiple format support (WAV, MP3)
+
+- **Visualization**
+  - Pitch contour visualization
+  - Tala cycle representation
+  - Spectrogram analysis
+  - Real-time waveform display
+
+## Technical Stack
+
+- **Frontend**: Flutter/Dart
+- **Audio Processing**: TensorFlow Lite
+- **ML Models**: Custom trained models for raga recognition
+- **Audio Libraries**: 
+  - just_audio for playback
+  - record for audio recording
+  - fftea for frequency analysis
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+### Prerequisites
+- Flutter SDK (>=3.0.0)
+- Android Studio / VS Code with Flutter extensions
+- Python 3.8+ (for ML model training)
 
-A few resources to get you started if this is your first Flutter project:
+### Installation
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+1. Clone the repository
+```bash
+git clone https://github.com/YOUR_USERNAME/icm.git
+```
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+2. Install dependencies
+```bash
+flutter pub get
+```
+
+3. Run the application
+```bash
+flutter run
+```
+
+### ML Model Training
+
+For training custom models, install Python dependencies:
+```bash
+cd ml
+pip install -r requirements.txt
+```
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Acknowledgments
+
+- Thanks to the Flutter team for the excellent framework
+- Indian Classical Music community for domain expertise
+- Contributors and testers
+
+## Contact
+
+For any queries or suggestions, please open an issue in the repository.
